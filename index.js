@@ -9,7 +9,7 @@ function nestedTarget() {
 function increaseRankBy(n) {
   var nodes = document.querySelectorAll('.ranked-list li');
   for(var i = 0; i < nodes.length; i++) {
-    parseInt(nodes[i].innerHTML) + n;
+    nodes[i].innerHTML = parseInt(nodes[i].innerHTML) + n;
   }
 }
 
